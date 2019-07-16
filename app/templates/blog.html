@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blog</title>
+    </head>
+    <body>
+        <p>Welcome {{user.username}}</p>
+       <h1>Welcome to our blogs</h1>
+       <div>
+           {% for post in posts%}
+           <h3>{{post.title}}</h3>
+           <p>{{post.content}}</p>
+           <p> <small>by{{post.author.username}} on {{post.date_posted}}</small> </p>
+           {%endfor%}
+       </div> 
+    </body>
+    
+</html>
